@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Playwrite+HU:wght@100..400&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 220, 243);
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 25px;
+  background-image: url(imgpesadilla/fond);
+}
+
+nav {width: 100%;
+  background-color: rgb(255, 191, 165);
+  padding: 10px 3px;
+  /* margin: 0 auto;
+  display: flex;
+  justify-items: center;
+  justify-content: center;*/
+  position: fixed;
+  top: 0;
+
+  z-index: 100;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+}
+
+nav li {
+  
+  background-color: darkgray;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  background-color: rgb(255, 0, 242);
+  display: block;
+  text-align: center;
+  padding: 10px 5px;
+  border-radius: 15px;
+}
+
+a:hover {
+  background-color: rgb(255, 0, 170);
+  color: black;
+}
+
+li:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+
+figure:hover {
+  box-shadow: 10px 10px 10px rgb(121, 31, 46);
+}
+
+.constelacionuno:hover {
+  box-shadow: 10px 10px 10px rgb(64, 153, 204);
+}
+
+.padre:hover {
+  box-shadow: 10px 10px 10px rgb(64, 64, 252);
+}
+
+.hermafrodita:hover {
+  box-shadow: 10px 10px 10px rgb(49, 235, 49);
+}
+
+.hermafroditauno:hover {
+  box-shadow: 10px 10px 10px rgb(49, 192, 235);
+}
+
+main {
+  margin-top: 120px;
+  scroll-margin-top: 120px;
+}
+
+h1 {
+  text-align: center;
+  padding: 16px;
+}
+
+.contenedoraudio {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  width: 80vw;
+  margin: auto;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  padding-right: 16px;
+  margin-bottom: 30px;
+  box-shadow: 5px 4px 10px red;
+}
+
+.imgvertical {
+  height: 500px;
+}
+
+.imghorizontal {
+  width: 400px;
+}
+
+.invertido {
+  flex-direction: row-reverse;
+}
+
+details div {
+  padding: 10px;
+}
+
+.textolargo {
+  padding: 20px 0;
+}
+
+summary {
+  font-weight: 600;
+}
+
+.QR {
+  width: 120px;
+}
+
+.qrs {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+footer {
+  height: 140px;
+  background-color: #302e2e;
+  color: #ded9d9;
+  text-align: center;
+  line-height: 2;
+}
+
+#activarmenu {
+  display: none;
+}
+
+.imgmenu {
+  /*iconfinder*/
+  width: 40px;
+  visibility: hidden;
+}
+
+@media (width<700px) {
+  .imgmenu {
+    visibility: visible;
+  }
+
+
+
+  nav li {
+    width: 100%;
+  }
+
+  #activarmenu:checked~ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imghorizontal {
+    width: 300px;
+  }
+
+  .imgvertical {
+    width: 300px;
+  }
+
+  article {
+    flex-direction: column;
+  }
+}
+
+@media (width<600px) {
+  .invertido {
+    flex-direction: column;
+  }
+}
+
+p {
+  font-family: "Playwrite HU", cursive;
+}
+label {
+    cursor: pointer;
+    display: none;
+}
+@media(width<768px) {
+    body {
+        background-color:rgb(110, 182, 230);
+    }
+
+    label {
+        display: block;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 0
+    }
+
+    li {
+        border-top: 1px solid white;
+    }
+
+    #activarmenu {
+        display: none;
+    }
+   a{background-color:rgb(229, 161, 235);
+    color: white;}
+
+
+    nav {
+      
+        transition: 0.5s;
+        position: absolute;
+        top: 50px;
+        width: 95%;
+        height: 50vh;
+        left: -100%;
+        background-color: rgb(185, 106, 196);
+    }
+
+    #activarmenu:checked~nav {
+        left: 0;
+    }
+}
+
+.hermafrodita {
+    background-color: aqua;
+}
+
+
+
+
+
+footer {
+   
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: black;
+}
+
